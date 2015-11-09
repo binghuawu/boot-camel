@@ -3119,3 +3119,391 @@
 2015-10-30 15:01:53.202  WARN 10924 --- [Camel (cc1) thread #0 - file:///tmp/camel/in] o.a.camel.impl.ScheduledPollConsumer     : Scheduled task started on:   Endpoint[file:///tmp/camel/in?delay=2000&noop=true&runLoggingLevel=WARN]
 2015-10-30 15:01:53.202 DEBUG 10924 --- [Camel (cc1) thread #0 - file:///tmp/camel/in] o.a.camel.component.file.FileConsumer    : Took 0.000 seconds to poll: c:\tmp\camel\in
 2015-10-30 15:01:53.202  WARN 10924 --- [Camel (cc1) thread #0 - file:///tmp/camel/in] o.a.camel.impl.ScheduledPollConsumer     : Scheduled task completed on: Endpoint[file:///tmp/camel/in?delay=2000&noop=true&runLoggingLevel=WARN]
+2015-11-07 23:23:11.721 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:11.727 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:11.728 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2015-11-07 23:23:11.728 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-11-07 23:23:11.729 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2015-11-07 23:23:11.836  INFO 7028 --- [main] camel.Application                        : Starting Application on Think-PC with PID 7028 (C:\cygwin64\home\Think\git-repo\boot-camel\target\classes started by Think in C:\cygwin64\home\Think\git-repo\boot-camel)
+2015-11-07 23:23:11.836 DEBUG 7028 --- [main] camel.Application                        : Running with Spring Boot v1.2.3.RELEASE, Spring v4.1.6.RELEASE
+2015-11-07 23:23:11.943  INFO 7028 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy
+2015-11-07 23:23:13.356  INFO 7028 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-11-07 23:23:13.772 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [classpath:/application.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2015-11-07 23:23:13.772 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [applicationConfigurationProperties] PropertySource
+2015-11-07 23:23:13.773 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2015-11-07 23:23:13.971 DEBUG 7028 --- [main] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2015-11-07 23:23:13.985 DEBUG 7028 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2015-11-07 23:23:13.998 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2015-11-07 23:23:13.999 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2015-11-07 23:23:14.003 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy24
+2015-11-07 23:23:14.014 DEBUG 7028 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2015-11-07 23:23:14.022 DEBUG 7028 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2015-11-07 23:23:14.904  INFO 7028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 18080 (http)
+2015-11-07 23:23:15.295  INFO 7028 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-11-07 23:23:15.297  INFO 7028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2015-11-07 23:23:15.705  INFO 7028 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-11-07 23:23:15.706 DEBUG 7028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2015-11-07 23:23:15.707  INFO 7028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3770 ms
+2015-11-07 23:23:16.034 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:16.034 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:16.035 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2015-11-07 23:23:16.036 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-11-07 23:23:16.037 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2015-11-07 23:23:16.097 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:16.098 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-11-07 23:23:16.098 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2015-11-07 23:23:16.099 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-11-07 23:23:16.099 DEBUG 7028 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2015-11-07 23:23:17.107  INFO 7028 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-11-07 23:23:17.111  INFO 7028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-11-07 23:23:17.112  INFO 7028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-11-07 23:23:17.159 DEBUG 7028 --- [localhost-startStop-1] o.s.web.filter.HiddenHttpMethodFilter    : Initializing filter 'hiddenHttpMethodFilter'
+2015-11-07 23:23:17.159 DEBUG 7028 --- [localhost-startStop-1] o.s.web.filter.HiddenHttpMethodFilter    : Filter 'hiddenHttpMethodFilter' configured successfully
+2015-11-07 23:23:17.163 DEBUG 7028 --- [main] o.s.w.c.s.StandardServletEnvironment     : Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2015-11-07 23:23:17.595 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Set the application context classloader to: sun.misc.Launcher$AppClassLoader@41dee0d7
+2015-11-07 23:23:17.835 DEBUG 7028 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2015-11-07 23:23:17.835 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2015-11-07 23:23:17.836 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2015-11-07 23:23:17.836 DEBUG 7028 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy24
+2015-11-07 23:23:17.837 DEBUG 7028 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2015-11-07 23:23:17.838 DEBUG 7028 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2015-11-07 23:23:17.863  INFO 7028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy
+2015-11-07 23:23:17.956 DEBUG 7028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy
+2015-11-07 23:23:17.971  INFO 7028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String camel.contoller.AController.index(java.util.Locale,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2015-11-07 23:23:17.976  INFO 7028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-11-07 23:23:17.977  INFO 7028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-11-07 23:23:18.020 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy
+2015-11-07 23:23:18.021 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2015-11-07 23:23:18.021 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2015-11-07 23:23:18.022 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2015-11-07 23:23:18.022 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2015-11-07 23:23:18.023 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'application': no URL paths identified
+2015-11-07 23:23:18.023 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2015-11-07 23:23:18.023 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2015-11-07 23:23:18.024 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'config': no URL paths identified
+2015-11-07 23:23:18.024 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'AController': no URL paths identified
+2015-11-07 23:23:18.025 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'camelContext': no URL paths identified
+2015-11-07 23:23:18.025 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2015-11-07 23:23:18.026 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.026 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2015-11-07 23:23:18.026 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2015-11-07 23:23:18.026 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2015-11-07 23:23:18.027 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2015-11-07 23:23:18.028 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.028 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2015-11-07 23:23:18.028 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2015-11-07 23:23:18.029 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.029 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2015-11-07 23:23:18.029 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2015-11-07 23:23:18.030 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2015-11-07 23:23:18.031 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2015-11-07 23:23:18.031 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.031 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2015-11-07 23:23:18.032 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2015-11-07 23:23:18.032 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2015-11-07 23:23:18.033 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.033 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2015-11-07 23:23:18.033 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2015-11-07 23:23:18.034 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2015-11-07 23:23:18.034 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2015-11-07 23:23:18.034 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.035 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2015-11-07 23:23:18.035 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.035 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.036 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.037 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2015-11-07 23:23:18.037 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.037 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2015-11-07 23:23:18.038 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2015-11-07 23:23:18.038 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2015-11-07 23:23:18.039 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2015-11-07 23:23:18.039 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2015-11-07 23:23:18.039 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2015-11-07 23:23:18.040 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2015-11-07 23:23:18.040 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2015-11-07 23:23:18.041 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2015-11-07 23:23:18.041 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2015-11-07 23:23:18.042 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2015-11-07 23:23:18.042 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2015-11-07 23:23:18.042 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2015-11-07 23:23:18.042 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2015-11-07 23:23:18.043 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextListener': no URL paths identified
+2015-11-07 23:23:18.043 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2015-11-07 23:23:18.043 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.044 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.044 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2015-11-07 23:23:18.044 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2015-11-07 23:23:18.044 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.045 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2015-11-07 23:23:18.045 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.045 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2015-11-07 23:23:18.046 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2015-11-07 23:23:18.046 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2015-11-07 23:23:18.046 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'http.mappers.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.046 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.047 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2015-11-07 23:23:18.047 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2015-11-07 23:23:18.047 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.047 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2015-11-07 23:23:18.048 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2015-11-07 23:23:18.048 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.048 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2015-11-07 23:23:18.049 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2015-11-07 23:23:18.049 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2015-11-07 23:23:18.049 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.GsonHttpMessageConvertersConfiguration': no URL paths identified
+2015-11-07 23:23:18.050 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.050 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2015-11-07 23:23:18.050 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.050 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified
+2015-11-07 23:23:18.051 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified
+2015-11-07 23:23:18.051 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified
+2015-11-07 23:23:18.051 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.051 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2015-11-07 23:23:18.052 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.052 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2015-11-07 23:23:18.052 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2015-11-07 23:23:18.052 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+2015-11-07 23:23:18.053 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2015-11-07 23:23:18.053 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2015-11-07 23:23:18.053 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2015-11-07 23:23:18.053 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2015-11-07 23:23:18.054 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2015-11-07 23:23:18.054 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2015-11-07 23:23:18.054 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2015-11-07 23:23:18.054 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2015-11-07 23:23:18.055 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2015-11-07 23:23:18.055 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2015-11-07 23:23:18.055 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2015-11-07 23:23:18.055 DEBUG 7028 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2015-11-07 23:23:18.071  INFO 7028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-11-07 23:23:18.071  INFO 7028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-11-07 23:23:18.098 DEBUG 7028 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy
+2015-11-07 23:23:18.153  INFO 7028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-11-07 23:23:18.297  INFO 7028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-11-07 23:23:18.345 DEBUG 7028 --- [main] .a.c.c.x.AbstractCamelContextFactoryBean : Setting up routes
+2015-11-07 23:23:18.346 DEBUG 7028 --- [main] .a.c.c.x.AbstractCamelContextFactoryBean : Found JAXB created routes: []
+2015-11-07 23:23:18.351 DEBUG 7028 --- [main] o.a.c.i.DefaultPackageScanClassResolver  : Searching for implementations of org.apache.camel.RoutesBuilder in packages: [camel.route]
+2015-11-07 23:23:18.356 DEBUG 7028 --- [main] o.a.c.i.DefaultPackageScanClassResolver  : Found: [class camel.route.Route1]
+2015-11-07 23:23:18.390 DEBUG 7028 --- [main] o.a.c.s.PackageScanRouteBuilderFinder    : Adding instantiated RouteBuilder: Routes: []
+2015-11-07 23:23:18.391 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Adding routes from builder: Routes: []
+2015-11-07 23:23:18.456 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : onApplicationEvent: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17d22080: startup date [Sat Nov 07 23:23:11 CST 2015]; root of context hierarchy]
+2015-11-07 23:23:18.460  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.13.2 (CamelContext: cc1) is starting
+2015-11-07 23:23:18.460 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@6ac563da, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@451eb3f9, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@41dee0d7
+2015-11-07 23:23:18.462  INFO 7028 --- [main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2015-11-07 23:23:18.463 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@62b4bb65
+2015-11-07 23:23:18.561 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=context,name="cc1"
+2015-11-07 23:23:18.561 DEBUG 7028 --- [main] o.a.camel.support.TimerListenerManager   : Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@f9ae920
+2015-11-07 23:23:18.562 DEBUG 7028 --- [main] a.c.m.DefaultManagementLifecycleStrategy : Registering 1 pre registered services
+2015-11-07 23:23:18.567 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="spring-event"
+2015-11-07 23:23:18.618 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultTypeConverter
+2015-11-07 23:23:18.636 DEBUG 7028 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Found 3 packages with 15 @Converter classes to load
+2015-11-07 23:23:18.684 DEBUG 7028 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/D:/DEV-TOOLS/mvn-repo/org/apache/camel/camel-core/2.13.2/camel-core-2.13.2.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-11-07 23:23:18.687 DEBUG 7028 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/D:/DEV-TOOLS/mvn-repo/org/apache/camel/camel-spring/2.13.2/camel-spring-2.13.2.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-11-07 23:23:18.690 DEBUG 7028 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loaded 1 @Converter classes
+2015-11-07 23:23:18.694  INFO 7028 --- [main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 179 type converters
+2015-11-07 23:23:18.705 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=EndpointRegistry
+2015-11-07 23:23:18.710 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultExecutorServiceManager
+2015-11-07 23:23:18.714 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=SharedProducerServicePool
+2015-11-07 23:23:18.714 DEBUG 7028 --- [main] o.a.c.impl.SharedProducerServicePool     : Starting service pool: org.apache.camel.impl.SharedProducerServicePool@2b5a4dac
+2015-11-07 23:23:18.718 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultInflightRepository
+2015-11-07 23:23:18.722 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultShutdownStrategy
+2015-11-07 23:23:18.726 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultPackageScanClassResolver
+2015-11-07 23:23:18.730 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=eventnotifiers,name=EventNotifier(0x5247710)
+2015-11-07 23:23:18.743 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@4dcfd68c to resolve component with name: timer
+2015-11-07 23:23:18.743 DEBUG 7028 --- [main] o.a.camel.impl.DefaultComponentResolver  : Found component: timer in registry: null
+2015-11-07 23:23:18.746 DEBUG 7028 --- [main] o.a.camel.impl.DefaultComponentResolver  : Found component: timer via type: org.apache.camel.component.timer.TimerComponent via: META-INF/services/org/apache/camel/component/timer
+2015-11-07 23:23:18.769 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="timer"
+2015-11-07 23:23:18.771 DEBUG 7028 --- [main] org.apache.camel.impl.DefaultComponent   : Creating endpoint uri=[timer://timerA?delay=2000], path=[timerA]
+2015-11-07 23:23:18.782 DEBUG 7028 --- [main] o.a.camel.util.IntrospectionSupport      : Configured property: delay on bean: Endpoint[timer://timerA?delay=2000] with value: 2000
+2015-11-07 23:23:18.784 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : timer://timerA?delay=2000 converted to endpoint: Endpoint[timer://timerA?delay=2000] by component: org.apache.camel.component.timer.TimerComponent@4f627fe1
+2015-11-07 23:23:18.809 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=endpoints,name="timer://timerA\?delay=2000"
+2015-11-07 23:23:18.859 DEBUG 7028 --- [main] org.apache.camel.model.LogDefinition     : The LogName is null. Falling back to create logger by using the route id route1.
+2015-11-07 23:23:18.865 DEBUG 7028 --- [main] o.a.c.p.interceptor.DefaultChannel       : Initialize channel for target: 'Log[/tmp/camel/in]'
+2015-11-07 23:23:18.877 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogTracer
+2015-11-07 23:23:18.894 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogDebugger
+2015-11-07 23:23:18.933 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-11-07 23:23:18.948  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2015-11-07 23:23:18.949  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2015-11-07 23:23:18.950 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Warming up route id: route1 having autoStartup=true
+2015-11-07 23:23:18.951 DEBUG 7028 --- [main] org.apache.camel.impl.RouteService       : Starting services on route: route1
+2015-11-07 23:23:18.954 DEBUG 7028 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:23:18.955 DEBUG 7028 --- [main] o.a.camel.processor.DefaultErrorHandler  : Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:log[Log(route1)[/tmp/camel/in]]]
+2015-11-07 23:23:18.955 DEBUG 7028 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Log(route1)[/tmp/camel/in]
+2015-11-07 23:23:18.972 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=processors,name="log1"
+2015-11-07 23:23:18.973 DEBUG 7028 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:23:18.997 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=routes,name="route1"
+2015-11-07 23:23:18.998 DEBUG 7028 --- [main] o.a.camel.support.TimerListenerManager   : Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@3b9097ad
+2015-11-07 23:23:18.998 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Route: route1 >>> EventDrivenConsumerRoute[Endpoint[timer://timerA?delay=2000] -> Channel[Log(route1)[/tmp/camel/in]]]
+2015-11-07 23:23:18.999 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Starting consumer (order: 1000) on route: route1
+2015-11-07 23:23:19.008 DEBUG 7028 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=consumers,name=TimerConsumer(0x19765b87)
+2015-11-07 23:23:19.009  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: Endpoint[timer://timerA?delay=2000]
+2015-11-07 23:23:19.009 DEBUG 7028 --- [main] a.c.m.DefaultManagementLifecycleStrategy : Load performance statistics disabled
+2015-11-07 23:23:19.012  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Total 1 routes, of which 1 is started.
+2015-11-07 23:23:19.014  INFO 7028 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.13.2 (CamelContext: cc1) started in 0.555 seconds
+2015-11-07 23:23:19.015 DEBUG 7028 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2015-11-07 23:23:19.017 DEBUG 7028 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3f42bbdb]
+2015-11-07 23:23:19.018 DEBUG 7028 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@363b474f]
+2015-11-07 23:23:19.018 DEBUG 7028 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@6dc6af59]
+2015-11-07 23:23:19.113  INFO 7028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 18080 (http)
+2015-11-07 23:23:19.115 DEBUG 7028 --- [main] o.a.camel.spring.SpringCamelContext      : onApplicationEvent: org.springframework.boot.context.embedded.EmbeddedServletContainerInitializedEvent[source=org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer@532c28aa]
+2015-11-07 23:23:19.118  INFO 7028 --- [main] camel.Application                        : Started Application in 7.898 seconds (JVM running for 8.915)
+2015-11-07 23:23:21.027  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:22.012  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:23.012  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:24.012  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:25.012  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:26.012  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:27.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:28.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:29.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:30.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:31.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:32.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:33.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:34.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:35.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:36.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:37.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:38.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:39.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:40.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:41.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:42.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:43.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:44.013  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:45.014  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:46.014  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:23:47.014  INFO 7028 --- [Camel (cc1) thread #0 - timer://timerA] route1                                   : /tmp/camel/in
+2015-11-07 23:46:43.549  INFO 2924 --- [main] o.e.j.i.junit.runner.RemoteTestRunner    : Starting RemoteTestRunner on Think-PC with PID 2924 (D:\sts-bundle\sts-3.6.2.RELEASE\configuration\org.eclipse.osgi\408\0\.cp started by Think in C:\cygwin64\home\Think\git-repo\boot-camel)
+2015-11-07 23:46:43.550 DEBUG 2924 --- [main] o.e.j.i.junit.runner.RemoteTestRunner    : Running with Spring Boot v1.2.3.RELEASE, Spring v4.1.6.RELEASE
+2015-11-07 23:46:43.640  INFO 2924 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@362e3cb1: startup date [Sat Nov 07 23:46:43 CST 2015]; root of context hierarchy
+2015-11-07 23:46:45.474 DEBUG 2924 --- [main] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2015-11-07 23:46:45.488 DEBUG 2924 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2015-11-07 23:46:45.502 DEBUG 2924 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2015-11-07 23:46:45.503 DEBUG 2924 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2015-11-07 23:46:45.507 DEBUG 2924 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy32
+2015-11-07 23:46:45.519 DEBUG 2924 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2015-11-07 23:46:45.530 DEBUG 2924 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2015-11-07 23:46:46.219 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Set the application context classloader to: sun.misc.Launcher$AppClassLoader@48ffb301
+2015-11-07 23:46:47.260 DEBUG 2924 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-11-07 23:46:47.260 DEBUG 2924 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-11-07 23:46:47.265 DEBUG 2924 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2015-11-07 23:46:47.265 DEBUG 2924 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-11-07 23:46:47.266 DEBUG 2924 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2015-11-07 23:46:47.356 DEBUG 2924 --- [main] .a.c.c.x.AbstractCamelContextFactoryBean : Setting up routes
+2015-11-07 23:46:47.357 DEBUG 2924 --- [main] .a.c.c.x.AbstractCamelContextFactoryBean : Found JAXB created routes: []
+2015-11-07 23:46:47.361 DEBUG 2924 --- [main] o.a.c.i.DefaultPackageScanClassResolver  : Searching for implementations of org.apache.camel.RoutesBuilder in packages: [camel.route]
+2015-11-07 23:46:47.367 DEBUG 2924 --- [main] o.a.c.i.DefaultPackageScanClassResolver  : Found: [class camel.route.Route1]
+2015-11-07 23:46:47.405 DEBUG 2924 --- [main] o.a.c.s.PackageScanRouteBuilderFinder    : Adding instantiated RouteBuilder: Routes: []
+2015-11-07 23:46:47.406 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Adding routes from builder: Routes: []
+2015-11-07 23:46:47.477 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : onApplicationEvent: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@362e3cb1: startup date [Sat Nov 07 23:46:43 CST 2015]; root of context hierarchy]
+2015-11-07 23:46:47.481  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.16.0 (CamelContext: cc1) is starting
+2015-11-07 23:46:47.483 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@625c414e, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@16c39a55, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@48ffb301
+2015-11-07 23:46:47.486  INFO 2924 --- [main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2015-11-07 23:46:47.550 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@360c65bd
+2015-11-07 23:46:47.743 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=context,name="cc1"
+2015-11-07 23:46:47.744 DEBUG 2924 --- [main] o.a.camel.support.TimerListenerManager   : Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@4f1b0c33
+2015-11-07 23:46:47.745 DEBUG 2924 --- [main] a.c.m.DefaultManagementLifecycleStrategy : Registering 1 pre registered services
+2015-11-07 23:46:47.753 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="spring-event"
+2015-11-07 23:46:47.812 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultTypeConverter
+2015-11-07 23:46:47.827 DEBUG 2924 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Found 3 packages with 16 @Converter classes to load
+2015-11-07 23:46:47.876 DEBUG 2924 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/D:/DEV-TOOLS/mvn-repo/org/apache/camel/camel-core/2.16.0/camel-core-2.16.0.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-11-07 23:46:47.878 DEBUG 2924 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/D:/DEV-TOOLS/mvn-repo/org/apache/camel/camel-spring/2.16.0/camel-spring-2.16.0.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-11-07 23:46:47.882 DEBUG 2924 --- [main] o.a.c.i.c.AnnotationTypeConverterLoader  : Loaded 1 @Converter classes
+2015-11-07 23:46:47.887  INFO 2924 --- [main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 183 type converters
+2015-11-07 23:46:47.901 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultEndpointRegistry
+2015-11-07 23:46:47.906 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultExecutorServiceManager
+2015-11-07 23:46:47.910 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=SharedProducerServicePool
+2015-11-07 23:46:47.911 DEBUG 2924 --- [main] o.a.c.impl.SharedProducerServicePool     : Starting service pool: org.apache.camel.impl.SharedProducerServicePool@42b6a4f3
+2015-11-07 23:46:47.915 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=SharedPollingConsumerServicePool
+2015-11-07 23:46:47.915 DEBUG 2924 --- [main] o.a.c.i.SharedPollingConsumerServicePool : Starting service pool: org.apache.camel.impl.SharedPollingConsumerServicePool@65076fbc
+2015-11-07 23:46:47.925 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultInflightRepository
+2015-11-07 23:46:47.939 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultAsyncProcessorAwaitManager
+2015-11-07 23:46:47.944 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultShutdownStrategy
+2015-11-07 23:46:47.948 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultPackageScanClassResolver
+2015-11-07 23:46:47.959 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultRestRegistry
+2015-11-07 23:46:47.973 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultRuntimeEndpointRegistry
+2015-11-07 23:46:47.977  INFO 2924 --- [main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2015-11-07 23:46:47.994 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@ac7ad3b to resolve component with name: timer
+2015-11-07 23:46:47.995 DEBUG 2924 --- [main] o.a.camel.impl.DefaultComponentResolver  : Found component: timer in registry: null
+2015-11-07 23:46:47.998 DEBUG 2924 --- [main] o.a.camel.impl.DefaultComponentResolver  : Found component: timer via type: org.apache.camel.component.timer.TimerComponent via: META-INF/services/org/apache/camel/component/timer
+2015-11-07 23:46:48.023 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="timer"
+2015-11-07 23:46:48.024 DEBUG 2924 --- [main] org.apache.camel.impl.DefaultComponent   : Creating endpoint uri=[timer://timerA?delay=2000], path=[timerA]
+2015-11-07 23:46:48.034 DEBUG 2924 --- [main] o.a.camel.util.IntrospectionSupport      : Configured property: delay on bean: Endpoint[timer://timerA?delay=2000] with value: 2000
+2015-11-07 23:46:48.035 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : timer://timerA?delay=2000 converted to endpoint: Endpoint[timer://timerA?delay=2000] by component: org.apache.camel.component.timer.TimerComponent@ce67fe
+2015-11-07 23:46:48.054 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=endpoints,name="timer://timerA\?delay=2000"
+2015-11-07 23:46:48.102 DEBUG 2924 --- [main] org.apache.camel.model.LogDefinition     : The LogName is null. Falling back to create logger by using the route id route1.
+2015-11-07 23:46:48.109 DEBUG 2924 --- [main] o.a.c.p.interceptor.DefaultChannel       : Initialize channel for target: 'Log[/tmp/camel/in]'
+2015-11-07 23:46:48.122 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogTracer
+2015-11-07 23:46:48.139 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogDebugger
+2015-11-07 23:46:48.170 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-11-07 23:46:48.184  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2015-11-07 23:46:48.185  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2015-11-07 23:46:48.186 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Warming up route id: route1 having autoStartup=true
+2015-11-07 23:46:48.187 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Starting services on route: route1
+2015-11-07 23:46:48.190 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:46:48.191 DEBUG 2924 --- [main] o.a.camel.processor.DefaultErrorHandler  : Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:log[Log(route1)[/tmp/camel/in]]]
+2015-11-07 23:46:48.191 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Log(route1)[/tmp/camel/in]
+2015-11-07 23:46:48.214 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=processors,name="log1"
+2015-11-07 23:46:48.215 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Starting child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:46:48.237 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=routes,name="route1"
+2015-11-07 23:46:48.238 DEBUG 2924 --- [main] o.a.camel.support.TimerListenerManager   : Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@146a845
+2015-11-07 23:46:48.238 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Route: route1 >>> EventDrivenConsumerRoute[Endpoint[timer://timerA?delay=2000] -> Channel[Log(route1)[/tmp/camel/in]]]
+2015-11-07 23:46:48.239 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Starting consumer (order: 1000) on route: route1
+2015-11-07 23:46:48.247 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Registered MBean with ObjectName: org.apache.camel:context=cc1,type=consumers,name=TimerConsumer(0x360acf3f)
+2015-11-07 23:46:48.248  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: Endpoint[timer://timerA?delay=2000]
+2015-11-07 23:46:48.249 DEBUG 2924 --- [main] a.c.m.DefaultManagementLifecycleStrategy : Load performance statistics disabled
+2015-11-07 23:46:48.252  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Total 1 routes, of which 1 is started.
+2015-11-07 23:46:48.254  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.16.0 (CamelContext: cc1) started in 0.773 seconds
+2015-11-07 23:46:48.259  INFO 2924 --- [main] o.e.j.i.junit.runner.RemoteTestRunner    : Started RemoteTestRunner in 5.259 seconds (JVM running for 6.452)
+2015-11-07 23:46:48.278  INFO 2924 --- [main] testcase.RouteATest                      : ********************************************************************************
+2015-11-07 23:46:48.278  INFO 2924 --- [main] testcase.RouteATest                      : Testing done: testPositive(testcase.RouteATest)
+2015-11-07 23:46:48.279  INFO 2924 --- [main] testcase.RouteATest                      : Took: 0.002 seconds (2 millis)
+2015-11-07 23:46:48.279  INFO 2924 --- [main] testcase.RouteATest                      : ********************************************************************************
+2015-11-07 23:46:48.280  INFO 2924 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@362e3cb1: startup date [Sat Nov 07 23:46:43 CST 2015]; root of context hierarchy
+2015-11-07 23:46:48.282 DEBUG 2924 --- [main] o.a.camel.spring.SpringCamelContext      : onApplicationEvent: org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@362e3cb1: startup date [Sat Nov 07 23:46:43 CST 2015]; root of context hierarchy]
+2015-11-07 23:46:48.283  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.16.0 (CamelContext: cc1) is shutting down
+2015-11-07 23:46:48.285  INFO 2924 --- [main] o.a.camel.impl.DefaultShutdownStrategy   : Starting to graceful shutdown 1 routes (timeout 300 seconds)
+2015-11-07 23:46:48.290 DEBUG 2924 --- [main] o.a.c.i.DefaultExecutorServiceManager    : Created new ThreadPool for source: org.apache.camel.impl.DefaultShutdownStrategy@249d8fea with name: ShutdownTask. -> org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@488d0e2c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0][ShutdownTask]
+2015-11-07 23:46:48.297 DEBUG 2924 --- [Camel (cc1) thread #1 - ShutdownTask] o.a.camel.impl.DefaultShutdownStrategy   : There are 1 routes to shutdown
+2015-11-07 23:46:48.299 DEBUG 2924 --- [Camel (cc1) thread #1 - ShutdownTask] o.a.camel.impl.DefaultShutdownStrategy   : Route: route1 suspended and shutdown deferred, was consuming from: Endpoint[timer://timerA?delay=2000]
+2015-11-07 23:46:48.300  INFO 2924 --- [Camel (cc1) thread #1 - ShutdownTask] o.a.camel.impl.DefaultShutdownStrategy   : Route: route1 shutdown complete, was consuming from: Endpoint[timer://timerA?delay=2000]
+2015-11-07 23:46:48.301  INFO 2924 --- [main] o.a.camel.impl.DefaultShutdownStrategy   : Graceful shutdown of 1 routes completed in 0 seconds
+2015-11-07 23:46:48.302 DEBUG 2924 --- [main] .a.c.i.DefaultAsyncProcessorAwaitManager : Shutting down with no inflight threads.
+2015-11-07 23:46:48.303 DEBUG 2924 --- [main] o.a.camel.support.TimerListenerManager   : Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@146a845
+2015-11-07 23:46:48.303 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=routes,name="route1"
+2015-11-07 23:46:48.304 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Stopping services on route: route1
+2015-11-07 23:46:48.304 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Shutting down child service on route: route1 -> Consumer[timer://timerA?delay=2000]
+2015-11-07 23:46:48.305 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=consumers,name=TimerConsumer(0x360acf3f)
+2015-11-07 23:46:48.305 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Shutting down child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:46:48.306 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Shutting down child service on route: route1 -> Log(route1)[/tmp/camel/in]
+2015-11-07 23:46:48.306 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Shutting down child service on route: route1 -> Channel[Log(route1)[/tmp/camel/in]]
+2015-11-07 23:46:48.307 DEBUG 2924 --- [main] org.apache.camel.impl.RouteService       : Shutting down services on route: route1
+2015-11-07 23:46:48.308 DEBUG 2924 --- [main] o.a.camel.support.TimerListenerManager   : Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@2d955c97
+2015-11-07 23:46:48.309 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=context,name="cc1"
+2015-11-07 23:46:48.311 DEBUG 2924 --- [main] o.a.c.i.DefaultExecutorServiceManager    : Forcing shutdown of ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@488d0e2c[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1][ShutdownTask]
+2015-11-07 23:46:48.312 DEBUG 2924 --- [main] o.a.c.impl.DefaultInflightRepository     : Shutting down with no inflight exchanges.
+2015-11-07 23:46:48.312 DEBUG 2924 --- [main] o.a.c.i.SharedPollingConsumerServicePool : Stopping service pool: org.apache.camel.impl.SharedPollingConsumerServicePool@65076fbc
+2015-11-07 23:46:48.313 DEBUG 2924 --- [main] o.a.c.impl.SharedProducerServicePool     : Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@42b6a4f3
+2015-11-07 23:46:48.314 DEBUG 2924 --- [main] org.apache.camel.util.EventHelper        : Ignoring notifying event Stopped CamelContext: cc1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@1ccf566e
+2015-11-07 23:46:48.316 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=SharedProducerServicePool
+2015-11-07 23:46:48.316 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="spring-event"
+2015-11-07 23:46:48.317 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultInflightRepository
+2015-11-07 23:46:48.317 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogTracer
+2015-11-07 23:46:48.317 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=endpoints,name="timer://timerA\?delay=2000"
+2015-11-07 23:46:48.318 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultTypeConverter
+2015-11-07 23:46:48.318 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultRestRegistry
+2015-11-07 23:46:48.318 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=processors,name="log1"
+2015-11-07 23:46:48.319 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=SharedPollingConsumerServicePool
+2015-11-07 23:46:48.319 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultPackageScanClassResolver
+2015-11-07 23:46:48.319 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultEndpointRegistry
+2015-11-07 23:46:48.320 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultRuntimeEndpointRegistry
+2015-11-07 23:46:48.320 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultAsyncProcessorAwaitManager
+2015-11-07 23:46:48.321 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=tracer,name=BacklogDebugger
+2015-11-07 23:46:48.321 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultShutdownStrategy
+2015-11-07 23:46:48.321 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=services,name=DefaultExecutorServiceManager
+2015-11-07 23:46:48.322 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=components,name="timer"
+2015-11-07 23:46:48.322 DEBUG 2924 --- [main] o.a.c.management.DefaultManagementAgent  : Unregistered MBean with ObjectName: org.apache.camel:context=cc1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-11-07 23:46:48.323 DEBUG 2924 --- [main] o.a.camel.util.IntrospectionSupport      : Clearing cache[size=54, hits=60, misses=57, evicted=0]
+2015-11-07 23:46:48.325  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.16.0 (CamelContext: cc1) uptime 0.847 seconds
+2015-11-07 23:46:48.325  INFO 2924 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.16.0 (CamelContext: cc1) is shutdown in 0.042 seconds

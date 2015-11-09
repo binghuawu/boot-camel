@@ -5,11 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
-import camel.FileHandler;
+public class RepeatRoute extends RouteBuilder {
 
-public class Route1 extends RouteBuilder {
-
-	private static final Logger LOGGER = LoggerFactory.getLogger(Route1.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(RepeatRoute.class);
 
 	@Value("${app.in}")
 	private String in;
@@ -27,7 +25,7 @@ public class Route1 extends RouteBuilder {
 		// .to("http://www.baidu.com")
 		// .log(LoggingLevel.DEBUG,
 		// "Response: ${headers.HTTP_RESPONSE_CODE}, ${header.CONTENT_TYPE}");
-		fromF("file://%s?delay=2000&noop=true", in).bean(FileHandler.class);
+		from("timer://timerA?delay=2000").log(in);
 
 		// .to("jms-ext:queue:jms/queue02");
 	}
