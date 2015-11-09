@@ -1,50 +1,56 @@
 package testcase;
 
-import org.apache.camel.CamelContext;
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Produce;
 import org.apache.camel.ProducerTemplate;
+import org.apache.camel.builder.AdviceWithRouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
+import org.apache.camel.model.ModelCamelContext;
+import org.apache.camel.test.junit4.CamelTestSupport;
 import org.apache.camel.test.spring.CamelSpringJUnit4ClassRunner;
 import org.apache.camel.test.spring.CamelTestContextBootstrapper;
-import org.apache.camel.test.spring.MockEndpoints;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.test.context.BootstrapWith;
-import org.springframework.test.context.ContextConfiguration;
+
+import camel.Application;
 
 @RunWith(CamelSpringJUnit4ClassRunner.class)
 @BootstrapWith(CamelTestContextBootstrapper.class)
-@ContextConfiguration
+@WebIntegrationTest
+@SpringApplicationConfiguration(classes = { Application.class })
 @DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD)
-@MockEndpoints("log:*")
-public class RepeatRouteTest {
+// @MockEndpoints
+public class RepeatRouteTest extends CamelTestSupport {
 
 	@Autowired
-	protected CamelContext camelContext2;
+	protected ModelCamelContext cc;
 
-	protected MockEndpoint mockB;
+	@EndpointInject(uri = "mock:log:logA")
+	protected MockEndpoint log;
 
-	@EndpointInject(uri = "mock:c", context = "camelContext2")
-	protected MockEndpoint mockC;
-
-	@Produce(uri = "direct:start2", context = "camelContext2")
-	protected ProducerTemplate start2;
-
-	@EndpointInject(uri = "mock:log:org.apache.camel.test.junit4.spring", context = "camelContext2")
-	protected MockEndpoint mockLog;
+	@Produce(uri = "mock://timer:timerA")
+	protected ProducerTemplate timer;
 
 	@Test
 	public void testPositive() throws Exception {
+		cc.getRouteDefinitions().get(0)
+				.adviceWith(cc, new AdviceWithRouteBuilder() {
+					@Override
+					public void configure() throws Exception {
+						// mock all endpoints
+						mockEndpointsAndSkip();
+					}
+				});
+		log.expectedBodiesReceived("David");
 
-		mockC.expectedBodiesReceived("David");
-		mockLog.expectedBodiesReceived("Hello David");
+		timer.sendBody("David");
 
-		start2.sendBody("David");
-
-		MockEndpoint.assertIsSatisfied(camelContext2);
+		MockEndpoint.assertIsSatisfied(cc);
 	}
 }

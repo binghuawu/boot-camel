@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class RepeatRoute extends RouteBuilder {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(RepeatRoute.class);
+	private static final Logger LOGGER = LoggerFactory
+			.getLogger(RepeatRoute.class);
 
 	@Value("${app.in}")
 	private String in;
@@ -25,7 +26,7 @@ public class RepeatRoute extends RouteBuilder {
 		// .to("http://www.baidu.com")
 		// .log(LoggingLevel.DEBUG,
 		// "Response: ${headers.HTTP_RESPONSE_CODE}, ${header.CONTENT_TYPE}");
-		from("timer://timerA?delay=2000").log(in);
+		from("timer://timerA?delay=2000").to("log:logA");
 
 		// .to("jms-ext:queue:jms/queue02");
 	}
