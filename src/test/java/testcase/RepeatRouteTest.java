@@ -1,9 +1,6 @@
 package testcase;
 
-import org.apache.camel.EndpointInject;
-import org.apache.camel.Produce;
-import org.apache.camel.ProducerTemplate;
-import org.apache.camel.builder.AdviceWithRouteBuilder;
+import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.model.ModelCamelContext;
 import org.apache.camel.test.junit4.CamelTestSupport;
@@ -31,26 +28,45 @@ public class RepeatRouteTest extends CamelTestSupport {
 	@Autowired
 	protected ModelCamelContext cc;
 
-	@EndpointInject(uri = "mock:log:logA")
+	// @EndpointInject(uri = "mock:log:logA")
 	protected MockEndpoint log;
 
-	@Produce(uri = "mock://timer:timerA")
-	protected ProducerTemplate timer;
+	// @Produce(uri = "mock://timer:timerA")
+	protected MockEndpoint timer;
+
+	@Override
+	public String isMockEndpoints() {
+		// override this method and return the pattern for which endpoints to
+		// mock.
+		// use * to indicate all
+		return "*";
+	}
+
+	@Override
+	protected RouteBuilder createRouteBuilder() throws Exception {
+		return new RouteBuilder() {
+			@Override
+			public void configure() throws Exception {
+			}
+		};
+	}
 
 	@Test
 	public void testPositive() throws Exception {
-		cc.getRouteDefinitions().get(0)
-				.adviceWith(cc, new AdviceWithRouteBuilder() {
-					@Override
-					public void configure() throws Exception {
-						// mock all endpoints
-						mockEndpointsAndSkip();
-					}
-				});
+		log = super.getMockEndpoint("mock:log:logA");
 		log.expectedBodiesReceived("David");
 
-		timer.sendBody("David");
+		sendBody("log:logA", "David");
 
-		MockEndpoint.assertIsSatisfied(cc);
+		assertMockEndpointsSatisfied();
+	}
+
+	@Test
+	public void testFilePoller() throws Exception {
+		getMockEndpoint("mock:bean:fileConsumer").expectedBodiesReceived("xxx");
+
+		sendBody("bean:fileConsumer", "xxx");
+
+		assertMockEndpointsSatisfied();
 	}
 }

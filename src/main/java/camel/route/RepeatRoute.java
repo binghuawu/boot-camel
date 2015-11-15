@@ -28,6 +28,7 @@ public class RepeatRoute extends RouteBuilder {
 		// "Response: ${headers.HTTP_RESPONSE_CODE}, ${header.CONTENT_TYPE}");
 		from("timer://timerA?delay=2000").to("log:logA");
 
+		// from("file:///tmp/in?noop=true").to("log:logA");
 		// .to("jms-ext:queue:jms/queue02");
 	}
 }
