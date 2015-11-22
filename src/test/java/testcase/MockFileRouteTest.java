@@ -46,11 +46,11 @@ public class MockFileRouteTest extends CamelTestSupport {
 	// // use * to indicate all
 	// return "*";
 	// }
-
-	@Override
-	public boolean isUseAdviceWith() {
-		return true;
-	}
+	//
+	// @Override
+	// public boolean isUseAdviceWith() {
+	// return true;
+	// }
 
 	@Override
 	protected RouteBuilder createRouteBuilder() throws Exception {
@@ -65,7 +65,7 @@ public class MockFileRouteTest extends CamelTestSupport {
 	@Test
 	public void testFilePollerB() throws Exception {
 		String expected = "xxx";
-		final MockEndpoint mockEndpoint = getMockEndpoint("mock:adv");
+		final MockEndpoint mockEndpoint = getMockEndpoint("mock:" + routeATo);
 		cc.getRouteDefinitions().get(0).adviceWith(cc, new RouteBuilder() {
 			@Override
 			public void configure() throws Exception {
