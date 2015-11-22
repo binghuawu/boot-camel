@@ -10,11 +10,13 @@ public class FilePollingRoute extends RouteBuilder {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(FilePollingRoute.class);
 
-	@Value("${app.in}")
-	private String in;
+	@Value("${routeA.from.uri}")
+	private String from;
+	@Value("${routeA.to.uri}")
+	private String to;
 
 	@Override
 	public void configure() throws Exception {
-		fromF("file://%s?noop=true", in).to("bean:fileConsumer");
+		from(from).to(to);
 	}
 }

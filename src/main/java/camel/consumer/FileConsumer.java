@@ -10,6 +10,9 @@ public class FileConsumer {
 	private final Logger LOG = LoggerFactory.getLogger(FileConsumer.class);
 
 	public void consume(Exchange ex) {
+		LOG.debug("Handling file {}:{}",
+				ex.getIn().getHeader("CamelFileAbsolutePath"), ex.getIn()
+						.getHeader("CamelFileLength"));
 		LOG.info("Body: {}", ex.getIn().getBody());
 	}
 }
