@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.core.ILock;
 
 @Component("clusteredIdempotentRepo")
 public class HazelcastIdempotentRepository extends ServiceSupport implements
@@ -19,6 +20,7 @@ public class HazelcastIdempotentRepository extends ServiceSupport implements
 	@Autowired
 	private transient HazelcastInstance hcInstance;
 	private transient Map<String, Object> theMap;
+	private transient ILock theLock;
 	private final int SIZE = 1000;
 
 	private String computeName() {
@@ -27,23 +29,39 @@ public class HazelcastIdempotentRepository extends ServiceSupport implements
 
 	@Override
 	public boolean add(String key) {
-		LOG.info("key: {}, map size:{}", key, theMap.size());
-		if (theMap.containsKey(key)) {
-			return false;
-		} else {
-			theMap.put(key, key);
-			return true;
+		try {
+			theLock.lock();
+			LOG.info("trying to add key: {}, map size:{}", key, theMap.size());
+			if (theMap.containsKey(key)) {
+				return false;
+			} else {
+				theMap.put(key, key);
+				LOG.info("added key: {}, map size:{}", key, theMap.size());
+				return true;
+			}
+		} finally {
+			theLock.unlock();
 		}
 	}
 
 	@Override
 	public boolean contains(String key) {
-		return theMap.containsKey(key);
+		try {
+			theLock.lock();
+			return theMap.containsKey(key);
+		} finally {
+			theLock.unlock();
+		}
 	}
 
 	@Override
 	public boolean remove(String key) {
-		return theMap.remove(key) != null;
+		try {
+			theLock.lock();
+			return theMap.remove(key) != null;
+		} finally {
+			theLock.unlock();
+		}
 	}
 
 	@Override
@@ -61,6 +79,7 @@ public class HazelcastIdempotentRepository extends ServiceSupport implements
 	@Override
 	protected void doStart() throws Exception {
 		theMap = hcInstance.getMap(computeName());
+		theLock = hcInstance.getLock(computeName());
 	}
 
 	@Override
