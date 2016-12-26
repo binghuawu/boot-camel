@@ -1,0 +1,2 @@
+class=camel.MyFileComponent
+strategy.factory.class=org.apache.camel.component.file.strategy.FileProcessStrategyFactory

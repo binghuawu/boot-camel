@@ -5,7 +5,7 @@
 	<artifactId>boot-camel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<camel.core>2.16.0</camel.core>
+		<camel.core>2.13.4</camel.core>
 		<java.version>1.7</java.version>
 	</properties>
 	<parent>
